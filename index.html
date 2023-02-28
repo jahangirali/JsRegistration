@@ -8,24 +8,29 @@
 </head>
 
 <body>
+  <form>
 <h1>Create Your Account</h1>
 <p><b>Your sign in details</b></p>
-<form>
-<label>First Name</label>
-<input type="text" id="firstName">
-<p>
-<label>Last Name</label>
-<input type="text" id="lastName">
-<p>
-  <label>Email Address</label>
-<input type="text" id="emailAddress">
+
+  <p>
+    <label>Email Address</label>
+    <input type="text" id="emailAddress" required>
+  </p>
 </p>
 <label>Password</label>
-<input type="text" id="password">
+<input type="text" id="password" required>
 <p>
 <label>Confirm Password</label>
-<input type="text" id="confirmPassword">
+<input type="text" id="confirmPassword" required>
 <p>
+<label>First Name</label>
+<input type="text" id="firstName" placeholder="First Name" required>
+<p>
+<label>Last Name</label>
+<input type="text" id="lastName" placeholder="Last Name" required>
+<p>
+
+
 
 
 <p>Lorem Ipsum is simply dummy text of the printing of Lorem Ipsum. 
@@ -34,7 +39,7 @@
 <br>
 <br>
 <br>
-<button id=submit onClick="alert('Hello, world!')">Submit</button> 
+<button id=submit onClick="alert('You are submitting the following details; ')">Submit</button> 
 
 
 </form>
